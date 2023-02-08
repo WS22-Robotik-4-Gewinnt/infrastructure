@@ -2,16 +2,11 @@
 version: "2.4"
 
 services:
-  #gateway:
-  #  extends:
-  #    file: common_infrastructure.yml
-  #    service: gateway
-
-  #bildverarbeitung:
-  #  image: ghcr.io/ws22-robotik-4-gewinnt/bildverarbeitung:main
-  #  ports:
-  #    - "8090:8090"
-  #  restart: always
+  bildverarbeitung:
+    image: ghcr.io/ws22-robotik-4-gewinnt/bildverarbeitung:main
+    ports:
+      - "8090:8090"
+    restart: always
     
   gamelogic:
     image: ghcr.io/ws22-robotik-4-gewinnt/spielalgorithmus:main
@@ -19,8 +14,8 @@ services:
       - "8093:8093"
     restart: always
     
-  #hardwaresteuerung:
-  #  image: ghcr.io/ws22-robotik-4-gewinnt/hardwaresteuerung:main
-  #  ports:
-  #    - "8096:8096"
-  #  restart: always
+  hardwaresteuerung:
+    image: ghcr.io/ws22-robotik-4-gewinnt/hardwaresteuerung:main
+    ports:
+      - "8096:8096"
+    restart: always
