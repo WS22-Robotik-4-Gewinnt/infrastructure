@@ -5,15 +5,17 @@ services:
   bildverarbeitung:
     image: ghcr.io/ws22-robotik-4-gewinnt/bildverarbeitung:main
     devices: 
-      - "/dev/video0 : /dev/video0"
+      - "/dev/video0:/dev/video0"
     ports:
       - "8090:8090"
+    platform: "linux/amd64"
     restart: always
     
   gamelogic:
     image: ghcr.io/ws22-robotik-4-gewinnt/spielalgorithmus:main
     ports:
       - "8093:8093"
+    platform: "linux/amd64"
     restart: always
     
   hardwaresteuerung:
@@ -21,4 +23,5 @@ services:
     privileged: true
     ports:
       - "8096:8096"
+    platform: "linux/amd64"
     restart: always
