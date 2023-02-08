@@ -1,9 +1,11 @@
 # run using
-version: "2.4"
+version: "3.8"
 
 services:
   bildverarbeitung:
     image: ghcr.io/ws22-robotik-4-gewinnt/bildverarbeitung:main
+    devices: 
+      - "/dev/video0 : /dev/video0"
     ports:
       - "8090:8090"
     restart: always
@@ -16,6 +18,7 @@ services:
     
   hardwaresteuerung:
     image: ghcr.io/ws22-robotik-4-gewinnt/hardwaresteuerung:main
+    privileged: true
     ports:
       - "8096:8096"
     restart: always
