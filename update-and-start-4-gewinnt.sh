@@ -13,4 +13,4 @@ cd ../Hardwaresteuerung
 git clone https://github.com/WS22-Robotik-4-Gewinnt/Hardwaresteuerung.git
 
 cd ..
-docker compose up -d --build --force-recreate .
+docker compose up -d --build --force-recreate 
