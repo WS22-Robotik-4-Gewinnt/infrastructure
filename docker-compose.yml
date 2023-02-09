@@ -3,7 +3,10 @@ version: "3.8"
 
 services:
   bildverarbeitung:
-    image: ghcr.io/ws22-robotik-4-gewinnt/bildverarbeitung:main
+    build:
+      context: ./Bildverarbeitung
+      dockerfile: ./Bildverarbeitung/Dockerfile
+    image: "ws22-robotik-4-gewinnt/bildverarbeitung:local"
     devices: 
       - "/dev/video0:/dev/video0"
     ports:
@@ -12,14 +15,20 @@ services:
     restart: always
     
   gamelogic:
-    image: ghcr.io/ws22-robotik-4-gewinnt/spielalgorithmus:main
+    build:
+      context: ./Spielalgorithmus
+      dockerfile: ./Spielalgorithmus/Dockerfile
+    image: "ws22-robotik-4-gewinnt/spielalgorithmus:local"
     ports:
       - "8093:8093"
     platform: "linux/amd64"
     restart: always
     
   hardwaresteuerung:
-    image: ghcr.io/ws22-robotik-4-gewinnt/hardwaresteuerung:main
+    build:
+      context: ./Hardwaresteuerung
+      dockerfile: ./Hardwaresteuerung/Dockerfile
+    image: "ws22-robotik-4-gewinnt/hardwaresteuerung:local"
     privileged: true
     ports:
       - "8096:8096"
