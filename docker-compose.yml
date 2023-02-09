@@ -8,7 +8,7 @@ services:
       dockerfile: ./Bildverarbeitung/Dockerfile
     image: "ws22-robotik-4-gewinnt/bildverarbeitung:local"
     devices: 
-      - "/dev/video0 : /dev/video0"
+      - "/dev/video0:/dev/video0"
     ports:
       - "8090:8090"
     restart: always
