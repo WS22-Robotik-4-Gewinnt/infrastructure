@@ -10,7 +10,7 @@ Zuerst muss das Raspberry Pi OS (64 Bit Variante) auf dem Raspberry Pi (bei unse
 Vor der Nutzung muss SPI am Raspberry Pi aktiviert werden:
 Nach dem Hochfahren oben links auf die ->
 ```
-  "Himbeere" drücken > Preferencess > Raspberry Pi Configuration > im Reiter auf "Interfaces" > dann SPI aktivieren 
+  "Himbeere" drücken > Preferencess > Raspberry Pi Configuration > im Reiter auf "Interfaces" > dann SPI aktivieren > Ok drücken
 ```
 ## Weitere Informationen
 
