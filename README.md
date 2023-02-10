@@ -15,7 +15,7 @@ Nach dem Hochfahren oben links auf die ->
 
 ![Pref](/Pictures/pi-configuration-menu2.png)
 
-![Interfaces](pi-configuration-interfaces.png)
+![Interfaces](/Pictures/pi-configuration-interfaces.png)
 ## Weitere Informationen
 
 Für weitere Informationen zu dem Projekt, Projektaufbau und der Logik besuchen Sie diese Repositorys.
