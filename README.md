@@ -7,6 +7,11 @@ Zuerst muss das Raspberry Pi OS (64 Bit Variante) auf dem Raspberry Pi (bei unse
 
 [Anleitung 2: Offizielle Dokumentation von Raspberry Pi](https://www.raspberrypi.com/documentation/computers/getting-started.html#installing-the-operating-system)
 
+Vor der Nutzung muss SPI am Raspberry Pi aktiviert werden:
+Nach dem Hochfahren oben links auf die ->
+```
+  "Himbeere" drücken > Preferencess > Raspberry Pi Configuration > im Reiter auf "Interfaces" > dann SPI aktivieren 
+```
 ## Weitere Informationen
 
 Für weitere Informationen zu dem Projekt, Projektaufbau und der Logik besuchen Sie diese Repositorys.
