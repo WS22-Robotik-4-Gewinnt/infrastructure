@@ -13,9 +13,9 @@ Nach dem Hochfahren oben links auf die ->
   "Himbeere" drücken > Preferencess > Raspberry Pi Configuration > im Reiter auf "Interfaces" > dann SPI aktivieren > Ok drücken
 ```
 
-![Pref](https://projects-static.raspberrypi.org/projects/raspberry-pi-using/36523137faf429d05c81a32233fc17536112b590/en/images/pi-configuration-menu2.png)
+![Pref](/Pictures/pi-configuration-menu2.png)
 
-![Interfaces](https://projects-static.raspberrypi.org/projects/raspberry-pi-using/36523137faf429d05c81a32233fc17536112b590/en/images/pi-configuration-interfaces.png)
+![Interfaces](pi-configuration-interfaces.png)
 ## Weitere Informationen
 
 Für weitere Informationen zu dem Projekt, Projektaufbau und der Logik besuchen Sie diese Repositorys.
